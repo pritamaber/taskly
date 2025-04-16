@@ -1,12 +1,92 @@
-# React + Vite
+# 📝 Taskly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A colorful and modern **To-Do app** built with **React**, **Tailwind CSS**, and **Appwrite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- ✅ User authentication with Appwrite
+- ✅ Upload avatar on register
+- ✅ Personalized todo list per user
+- ✅ Add, delete, update, and toggle todos
+- ✅ Real-time UI with clean animations
+- ✅ Profile avatar shown in the header
+- ✅ Mobile responsive
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ **React** (Vite)
+- 🎨 **Tailwind CSS**
+- ☁️ **Appwrite** (Auth, Database, Storage)
+- 📦 **React Router DOM**
+- 📁 Avatar uploads with **Appwrite Storage**
+
+---
+
+## 📸 Screenshots
+
+> _(Insert your screenshots here)_  
+> Or use placeholders like:  
+> `![Screenshot](./screenshots/home.png)`
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/pritamaber/taskly.git
+cd taskly
+```
+
+2. Install dependencies
+   bash
+   Copy
+   Edit
+   npm install
+
+3. Setup your .env file
+   env
+   Copy
+   Edit
+   VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+   VITE_APPWRITE_PROJECT_ID=your_project_id
+   VITE_APPWRITE_DATABASE_ID=your_database_id
+   VITE_APPWRITE_COLLECTION_ID_USERS=your_users_collection_id
+   VITE_APPWRITE_COLLECTION_ID_TODOS=your_todos_collection_id
+   VITE_APPWRITE_BUCKET_ID_AVATARS=your_bucket_id
+   ⚠️ Don’t commit .env to GitHub — it should be in .gitignore.
+
+4. Run the dev server
+   bash
+   Copy
+   Edit
+   npm run dev
+   App runs locally at: http://localhost:5173
+
+📂 Folder Structure
+bash
+Copy
+Edit
+src/
+├── appwrite/ # Appwrite client config
+├── components/ # Reusable UI components
+├── context/ # Auth context (login/register)
+├── hooks/ # Custom hooks like useTodos, useUserProfile
+├── pages/ # Login, Register, etc.
+├── App.jsx # App entry
+├── main.jsx # Vite entry point
+
+🤝 Acknowledgements
+Appwrite
+
+React
+
+Tailwind CSS
+
+✨ Author
+Made with 💜 by @pritamaber
